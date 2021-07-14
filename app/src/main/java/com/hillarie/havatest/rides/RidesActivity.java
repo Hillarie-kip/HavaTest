@@ -161,7 +161,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
             return distance >= lower && distance <= Uper;
         }).collect(Collectors.toList());
 
-      //  pojoList.clear();
+        pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
         setTitle("RIDES "+pojoList.size());
