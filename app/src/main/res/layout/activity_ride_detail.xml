@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_one_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+<LinearLayout
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/tv_costs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="8 May"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="8 May"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+
+                    <TextView
+                        android:drawableStart="@drawable/ic_start"
+                        android:id="@+id/tv_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins"
+                        android:text="pick up"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableStart="@drawable/ic_end"
+                        android:id="@+id/tv_dropOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Drop off"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/iv_asset"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                app:civ_border_color="@color/colorAccent"
+                                app:civ_border_width="@dimen/_1sdp"
+                                android:src="@mipmap/ic_launcher" />
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/iv_asset"
+                                android:id="@+id/tv_assetName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="closed"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/tv_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins"
+                                android:text="DIS"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+
+                                android:id="@+id/tv_duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins"
+                                android:text="DURATION"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_11sdp" />
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/tv_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins"
+                                android:text="COST"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/iv_driver"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                app:civ_border_color="@color/colorAccent"
+                                app:civ_border_width="@dimen/_1sdp"
+                                android:src="@mipmap/ic_launcher" />
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/iv_driver"
+                                android:id="@+id/tv_driver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="closed"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <fragment
+        android:layout_below="@+id/cv_one_login"
+        android:id="@+id/mapNearBy"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+
+</RelativeLayout>

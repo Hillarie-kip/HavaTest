@@ -1,0 +1,250 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Crop" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@color/white</item>
+    </style>
+
+
+    <style name="Login" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="navbarTitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ProgressKali" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading Please wait....</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressCancel" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Cancelling Please wait....</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressClose" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Closing Request Please wait....</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressUpdating" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Updating Please wait....</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+
+    <style name="ProgressLogin" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">"authenticating...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressBooking" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">"Booking Please wait...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressHouseAssignment" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">House Assignment Please wait....</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressLoadUserOrder" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Loading Customer Details...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressReturns" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Adding Cylinder Returns...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+
+    <style name="ProgressRejectOrder" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Rejecting Order...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressAcceptLoaded" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Accepting Loaded Quantity...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressStartOrder" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Starting Order...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressReplacement" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">Reporting defect...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressLoadOrder" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="DialogTitleText">"Loading Orders...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressPayment" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">"Sending Request...</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="ProgressMaster" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">"Finalizing...</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text" parent="TextAppearance.AppCompat.SearchResult.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SwitchTextAppearance" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_3sdp</item>
+    </style>
+
+    <style name="ActionItem">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+    </style>
+</resources>

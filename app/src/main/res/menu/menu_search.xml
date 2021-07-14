@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="info.androidhive.recyclerviewsearch.MainActivity">
+    <item
+        android:id="@+id/action_search"
+
+        android:orderInCategory="100"
+        android:title="search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:orderInCategory="100"
+        android:title="refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:title="filter"
+        app:showAsAction="always" />
+</menu>

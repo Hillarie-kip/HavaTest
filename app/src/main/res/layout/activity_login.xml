@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".user.LoginActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:background="@color/colorPrimaryDark" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_two_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:textAlignment="center"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_one_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_200sdp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="@dimen/_13sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:textColorHint="@color/white">
+
+                            <EditText
+                                android:fontFamily="@font/poppins_semibold"
+                                android:id="@+id/et_phonenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorAccent"
+                                android:drawableRight="@android:drawable/ic_menu_call"
+                                android:hint="Phone Number"
+                                android:inputType="phone"
+                                android:textColorHint="@color/colorAccent"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:textColorHint="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="45dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorAccent"
+                                android:hint="Password"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:inputType="textPassword"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-45dp"
+                android:weightSum="2"
+                android:elevation="15dp" >
+
+                <Button
+
+                    android:fontFamily="@font/poppins_semibold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_login"
+                    android:text="Log In "
+                    android:textStyle="bold"
+                    android:id="@+id/btnLogin"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="New Account?? Request Registration"
+                android:textColor="@color/white"
+                android:id="@+id/tv_Requestregistration" />
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Forgot Password!"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_forgotpass" />
+
+            <TextView
+                android:visibility="gone"
+
+                android:fontFamily="@font/poppins"
+                android:padding="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="access trial version > > >"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tv_accesstrial" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

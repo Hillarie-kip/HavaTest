@@ -1,0 +1,26 @@
+[
+  {
+    "featureType": "poi.business",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#2a0085"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.medical",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#4696ec"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  }
+]

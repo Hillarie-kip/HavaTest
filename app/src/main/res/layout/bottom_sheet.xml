@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingBottom="8dp"
+    >
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="FILTER : "
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:text="CLEAR : "
+            android:fontFamily="@font/poppins"
+          android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="include cancelled trips : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:layout_gravity="center"
+            android:id="@+id/sw_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="included"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:thumb="@drawable/customswitchselector"
+            android:track="@drawable/custom_track"
+            android:textOff="include"
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:showText="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_any"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                app:drawableStartCompat="@drawable/ic_distance"
+                android:text="Any Distance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_under3"
+                app:drawableStartCompat="@drawable/ic_distance"
+                android:text="Under 3KM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_any"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_3to8"
+                app:drawableStartCompat="@drawable/ic_distance"
+                android:text="3KM TO 8 KM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_under3"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_8to15"
+                app:drawableStartCompat="@drawable/ic_distance"
+                android:text="8KM to 15 KM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_3to8"
+                style="@style/ActionItem"
+                />
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_plus15"
+                app:drawableStartCompat="@drawable/ic_distance"
+                android:text="More than 15 KM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_3to8"
+                style="@style/ActionItem"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_anytime"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                app:drawableStartCompat="@drawable/ic_time"
+                android:text="Any Time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_under5min"
+                app:drawableStartCompat="@drawable/ic_time"
+                android:text="Under 5 MIN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_any"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_5to10min"
+                app:drawableStartCompat="@drawable/ic_time"
+                android:text="5 TO 10 MIN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_under3"
+                style="@style/ActionItem"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_10to20"
+                app:drawableStartCompat="@drawable/ic_time"
+                android:text="10 to 20 MIN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_3to8"
+                style="@style/ActionItem"
+                />
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:id="@+id/tv_plus20"
+                android:text="More than 20 MIN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_3to8"
+                style="@style/ActionItem"
+                app:drawableStartCompat="@drawable/ic_time" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+<Button
+    android:id="@+id/btn_filter"
+    android:background="@drawable/button_filter"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/_200sdp"
+    android:text="FILTER"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
