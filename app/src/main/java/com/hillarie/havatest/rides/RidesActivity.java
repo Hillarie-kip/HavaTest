@@ -77,10 +77,9 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         recyclerView = findViewById(R.id.rv);
 
 
-
         pojoList = new ArrayList<>();
         mAdapter = new rideAdapter(this, pojoList, this);
-
+        setTitle("RIDES "+pojoList.size());
 
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -131,6 +130,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         }
         if (item==6){
             mAdapter.notifyDataSetChanged();
+            setTitle("RIDES "+pojoList.size());
         }
         if (item==7){
             //under 5 min
@@ -169,6 +169,8 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
+        setTitle("RIDES "+pojoList.size());
+
     }
     public  void DistanceGreaterThan(int value){
         List<pojo> filtered = pojoList.stream().filter(x -> {
@@ -179,6 +181,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
+        setTitle("RIDES "+pojoList.size());
     }
 
 
@@ -191,6 +194,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
+        setTitle("RIDES "+pojoList.size());
     }
     public  void TimeGreaterThan(int value){
         List<pojo> filtered = pojoList.stream().filter(x -> {
@@ -201,6 +205,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
+        setTitle("RIDES "+pojoList.size());
     }
 
     private void fetchRides(String url) {
@@ -225,7 +230,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
 
                             pojoList.clear();
                             pojoList.addAll(items);
-
+                            setTitle("RIDES "+pojoList.size());
                             // refreshing recycler view
                             mAdapter.notifyDataSetChanged();
 
@@ -256,21 +261,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonObjectRequest);
     }
-    static class lessThan3Km implements Comparator<pojo>
-    {
-        public int compare(pojo p1, pojo p2)
-        {
-            double min = p1.getDistance();
-            double max = p1.getDistance();
 
-            if (min == max)
-                return 0;
-            else if (min > max)
-                return 1;
-            else
-                return -1;
-        }
-    }
 
 
     @Override

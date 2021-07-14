@@ -1,6 +1,8 @@
 package com.hillarie.havatest;
 
 
+ import com.hillarie.havatest.rides.RidesActivity;
+ import com.hillarie.havatest.rides.pojo;
  import com.hillarie.havatest.user.Contract;
  import com.hillarie.havatest.user.LoginCredentials;
  import com.hillarie.havatest.user.LoginPresenter;
@@ -16,16 +18,18 @@ package com.hillarie.havatest;
         import org.mockito.MockitoAnnotations;
 
         import static org.junit.Assert.assertEquals;
-        import static org.mockito.Matchers.eq;
+ import static org.junit.Assert.assertFalse;
+ import static org.mockito.Matchers.eq;
         import static org.mockito.Mockito.verify;
 
 public class LoginTest {
 
     private LoginPresenter loginPresenter;
 
+
     private LoginCredentials loginCredentials = new LoginCredentials(
-            "",
-            "");
+            "hillary@gmail.com",
+            "12345");
 
     @Mock
     private LoginRepositoryImpl loginRepository;
@@ -56,5 +60,5 @@ public class LoginTest {
 
         assertEquals("Invalid Credentials", argumentCaptor.getValue());
     }
-
 }
+
