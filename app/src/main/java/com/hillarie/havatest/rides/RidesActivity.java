@@ -1,9 +1,5 @@
 package com.hillarie.havatest.rides;
 
-/**
- * Created by Hillarie Kalya on 07/14/2021.
- * Copyright (c) 2019 All rights reserved.
- */
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -52,7 +48,6 @@ import dmax.dialog.SpotsDialog;
  * Created by Hillarie Kalya on 07/14/2021.
  * Copyright (c) 2021 All rights reserved.
  */
-
 public class RidesActivity extends AppCompatActivity implements rideAdapter.ContactsAdapterListener, filterFragment.ItemClickListener {
     private static final String TAG = RidesActivity.class.getSimpleName();
     private RecyclerView recyclerView;
@@ -166,7 +161,7 @@ public class RidesActivity extends AppCompatActivity implements rideAdapter.Cont
             return distance >= lower && distance <= Uper;
         }).collect(Collectors.toList());
 
-        pojoList.clear();
+      //  pojoList.clear();
         pojoList.addAll(filtered);
         mAdapter.notifyDataSetChanged();
         setTitle("RIDES "+pojoList.size());
